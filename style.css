@@ -1,0 +1,29 @@
+
+body
+{
+    height: 750px;
+}
+
+.header{
+    margin:0px auto;
+    padding:0%;
+    height:10%;
+    width:100%;
+    overflow:hidden;
+    background-color:#666;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+form input{
+    background: #f0f0f0;
+    
+    border: none;
+    border-left: 2px solid #fff;
+    
+    font-size: 24px;
+    margin: 0 auto;
+}
