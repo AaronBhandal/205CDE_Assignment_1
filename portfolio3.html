@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset='utf-8'>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
+         <link rel='stylesheet' href='homestyle.css'/>
+         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+         <title>Logged in</title>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header"><a href="loggedinhome.html" class="navbar-brand">Aaron's Portfolio</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="loggedinhome.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="cv.html">Curriculum Vitae</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="portfolio.html">Portfolio <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Year 1 - project 1</a></li>
+                                <li><a href="#">Year 1 - project 2</a></li>
+                                <li><a href="#">Year 1 - project 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reflection.html">Overall Reflection</a></li>
+                        <li><a href="login2.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="welcome-container">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <div class="form-group">
+                    <h3>Year 1 - Project 3</h3>
+                    <h5>Raspberry Pie Web Server</h5>
+                    <p>For our third and final project, we were given the task of creating a web server using a Raspberry Pi and to remotely access the files on the Pi on another work station.</p>
+                    <p>The first step was getting used to the Raspberry Pi and an operating system I have never used before being Linux. Setting up the Pi was rather straight forward, the Pi had a inbuilt installer that lets the user choose the type of operating system they want. I chose to download Raspbian which was the recommended package the Pi had given me.</p>
+                    <p>The Pi is an extremely compact and mobile piece of equipment, this made it very easy to leave powered and connected to the internet anywhere at home, without taking up space and allowing it to be accessed remotely.</p>
+                    <p>The biggest learning curve for me personally would have been getting my head around a completely command line based operating system such as Linux. Customising the OS was extremely difficult and small things such as changing the time before the Pi sleeps would require a specific command I did not know. I did a lot of research on Raspbian using different forums and sites such as StackOverflow, these gave me a library of information to dig through and though I would never be able to read it all, the information was all extremely helpful.</p>
+                    <p>Linux on a whole is a very simple and straightforward operating system, though still rather visual with its task bar and desktop, once you get your head around it, it becomes very easy to navigate.</p>
+                    <p>To begin setting up for the web server I create a folder to hold all the files i wanted to access. I created a folder called WebServer and added 3 files from 4 different file formats being text, image, audio and video files. Once the folder was complete I opened up Terminal and began to set up a web server using the python -m SimpleHTTPServer, this created a vanilla web server accessible through the Pi’s IP address.</p>
+                    <p>With this completed the first half of the project was ready, the second more difficult task was to create a menu like system using Python to access these files. Accessing the files was very simple and easy for me to do with my own knowledge of Python, the only part that required a little bit of external research was creating the GUI menu using a library called TKinter.</p>
+                    <p>Reading a little bit into the library using TKinter’s website, I had a general understanding of most of the functions and different features I needed to complete the menu.</p>
+                    <p>I was very happy with how the menu looked at the end of the project. The design was consistent and user friendly, I included prompts on file names the user can choose and named each button accordingly. </p>
+                    <p>I made a entry box so that users can type in their own choice of file to download and open from the server, giving them control of the application, making them feel more comfortable.</p>
+                    <p>I asked a few friends to try and use my menu without any of them having seen it before, they all were able to use it only coming into one problem which was that the menu needed the text in the entry box to be case sensitive to the file the user wants.</p>
+                    <p>Overall this project was one in which I learnt the most from. Using Linux for the first time was quite a fun experience and I would definitely look forward to come into contact with it in the future. Creating my own GUI was very interesting also and has motivated me to do play around with it outside of university. This is definitely the project I had most fun with from planning, implementation and testing were all very enjoyable and didn’t pose any annoyances, even troubleshooting problems was interesting.</p>
+                </div>
+            </div>  
+        </div>  
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="site.js"></script>
+    </body>
+</html>
