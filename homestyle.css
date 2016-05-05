@@ -1,0 +1,51 @@
+body
+{
+    height: 750px;
+}
+
+.header{
+    padding:0%;
+    height:10%;
+    width:100%;
+    overflow:hidden;
+    background-color:#666;
+}
+
+h3{
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 40px; 
+    font-weight: bold;
+}
+
+h5{
+    text-align: center;
+    font-size: 26px; 
+}
+
+a{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.well{
+  height: 250px;
+} 
+
+.welcome-container {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.welcome-container {
+  width: 90%; 
+  height: 80%;
+  min-width: 200px;
+  max-width: 4000px;
+  padding: 40px;
+}
