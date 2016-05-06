@@ -23,14 +23,7 @@
                         <li><a href="loggedinhome.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                         <li><a href="cv.html">Curriculum Vitae</a></li>
                         <li><a href="hobbies.html">Hobbies</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="portfolio.html">Portfolio <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Year 1 - project 1</a></li>
-                                <li><a href="#">Year 1 - project 2</a></li>
-                                <li><a href="#">Year 1 - project 3</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="reflection.html">Overall Reflection</a></li>
                         <li><a href="login2.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
                     </ul>
@@ -57,20 +50,25 @@
                     <img src="screen-shot-2015-03-13-at-20-04-17.png" class="img-responsive" alt="Responsive image">
                     <p style="padding-top: 20px">Overall this project was one in which I learnt the most from. Using Linux for the first time was quite a fun experience and I would definitely look forward to come into contact with it in the future. Creating my own GUI was very interesting also and has motivated me to do play around with it outside of university. This is definitely the project I had most fun with from planning, implementation and testing were all very enjoyable and didn’t pose any annoyances, even troubleshooting problems was interesting.</p>
                     <div class="container">
+                    <div class="container">
                     <div class="comment-container">
                         <div class="col-sm-12 col-md-9">
                             <form class "form">
                                 <h1 style="color: #337ab7">Comment</h1>
                                 <div class="form-group input-group">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-comment"></i></span>
-                                    <input class="form-control" type="text" name='comment' placeholder="What's on your mind?"/>          
+                                    <input id="comment" class="form-control" type="text" name='comment' placeholder="What's on your mind?"/>          
                                 </div>
                                 <div class="form-group">
-                                    <a href="loggedinhome.html" class="btn btn-primary btn-block" role="button">Comment</a>
+                                    <button id="post_comment" class="btn btn-primary btn-block" role="button">Comment</a>
                                 </div>
                             </form>        
+                        <ul class="comments" id="commentList">
+                            <li>IGN 10/10!</li>
+                        </ul> 
                         </div>  
                     </div>    
+                </div>   
                 </div>
                     
                 </div>
@@ -78,6 +76,6 @@
         </div>  
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="site.js"></script>
+        <script src="comment.js"></script>
     </body>
 </html>
