@@ -1,40 +1,40 @@
-// JavaScript File
+// Javascript File
 'use strict';
-//Requires less input
+//Allows for simple statement with less input
 
 function addComment() {
 //Declares addComment function
 
    var textbox = document.getElementById("comment");
-   //Declares variable for locating contents within the text with the id "comment_field"
+   //Creates a variable which will serarch for a variable called "comment_field" and the text within
    
    var commentText = textbox.value;
-   //Declares variable for holding contents of above mentioned textbox
+   //Creates a variable to store the text within the comment box being looked for above
    
    var commentList = document.getElementById("commentList")
-   //Declares a variable for locating the list with the id "commentList"
+   //Creates a variable that looks for the id of an element called "commentList"
    
    var commentListItem = document.createElement("li");
-   //Declares a variable to create a new list element
+   //Creates a variable for where the comments will be stored
    
    var html = commentText;
-   //Allows for creation of html elements
+   //Allows HTML elements to be created
    
    commentListItem.innerHTML = html;
-   //Same as previous
+   //Allows HTML elements to be created
    
    if (textbox.value != "") {
-   //If the textbox is not empty, execute the following code;
+   //Check whether there is actualy text within the text box if there is then carry on 
 
        commentList.appendChild(commentListItem);
-       //Adds the new comment to the end of the list
+       //Adds the new comment to the bottom of the list
        
        textbox.value = "";
-       //Resets textbox after a comment has been submitted
+       //Clears the textbox of text after submission
    }
    
    return false;
-   //terminate
+   //end
    
 }
 
