@@ -2,22 +2,28 @@
 <html>
     <head>
          <meta charset='utf-8'>
+         <!-- Specifies the character coding for the document -->
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- This is setting the actual space on the screen that the user sees-->
          <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
          <link rel='stylesheet' href='homestyle.css'/>
          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-         <title>Logged in</title>
+         <!-- Linking the Bootsrap CDN, the CSS file and bootsrap JS file-->
+         <title>Portfolio</title>
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
+            <!-- Sets the navbars color to be inversed and to be fixed to the top of the page-->
             <div class="container">
                 <div class="navbar-header"><a href="loggedinhome.html" class="navbar-brand">Aaron's Portfolio</a>
+                <!-- Giving the navbar a title and setting it as a link to the logged in home page-->
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 </div>
+                <!-- Allows the navbar to change size depending on the size of the window -->
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="loggedinhome.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
@@ -26,12 +32,14 @@
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="reflection.html">Overall Reflection</a></li>
                         <li><a href="login2.html"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                        <!-- Creates a variety of buttons to link to different pages some having unique icons -->
                     </ul>
                 </div>
             </div>
         </div>
         <div class="welcome-container">
             <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <!-- Makes the container repsonsive, changing size depending on the size of the window -->
                 <div class="form-group">
                     <h3>Welcome to my online portfolio</h3>
                     <div class="btn-group btn-group-justified" role="group" aria-label="...">
@@ -44,13 +52,15 @@
                         <div class="btn-group" role="group">
                             <a href="portfolio3.html" class="btn btn-info" role="button">Year 1 - Project 3</a>
                         </div>
+                        <!-- Creates 3 buttons that are links to 3 different portfolio pages -->
                     </div>
                     <h5>Using the links above you will be redirected and can see the projects I had completed in my first year of university.</h5>
+                    <!--Just a sentence telling the user what the 3 buttons do -->
                 </div>
             </div>  
         </div>  
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="site.js"></script>
+        <!-- Links the JQuery CDN -->
     </body>
 </html>
